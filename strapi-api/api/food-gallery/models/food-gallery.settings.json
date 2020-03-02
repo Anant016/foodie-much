@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "food-gallery"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "foodimage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "food_galleries"
+    }
+  },
+  "connection": "default",
+  "collectionName": "food_galleries"
+}

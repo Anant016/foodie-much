@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/food-galleries",
+      "handler": "food-gallery.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/food-galleries/count",
+      "handler": "food-gallery.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/food-galleries/:id",
+      "handler": "food-gallery.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/food-galleries",
+      "handler": "food-gallery.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/food-galleries/:id",
+      "handler": "food-gallery.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/food-galleries/:id",
+      "handler": "food-gallery.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
