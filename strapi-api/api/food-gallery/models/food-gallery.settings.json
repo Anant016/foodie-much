@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "food_galleries",
   "info": {
     "name": "food-gallery"
   },
@@ -24,8 +26,9 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "food_galleries"
+    },
+    "author": {
+      "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "food_galleries"
+  }
 }
